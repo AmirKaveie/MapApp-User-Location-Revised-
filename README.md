@@ -65,7 +65,7 @@ Conditional Rendering:
           </View>
         );
 
-    Removed Fallback Coordinates:
+Removed Fallback Coordinates:
         Removed the fallback coordinates that were previously used in the initialRegion if the location wasn't available (latitude: 37.78825, longitude: -122.4324).
 
 Detailed Comparison:
@@ -101,8 +101,6 @@ return (
 );
 
 New Code:
-
-jsx
 
         if (!location) {
           // Show a loading indicator while the location is being fetched
@@ -141,4 +139,4 @@ Summary of Changes:
     Loading State: Added a loading indicator while the location is being fetched.
     Initial Rendering: Ensured the map only renders after the location is available, centering the map on the user's location right from the start.
     Code Simplification: Removed the fallback coordinates for initialRegion, making the code more focused on showing the user's current location.
-Conditional Rendering:
+
